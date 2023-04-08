@@ -1,0 +1,4 @@
+FROM php:7-apache
+COPY . /var/www/index.php
+EXPOSE 80
+CMD [ "/usr/sbin/apache2ctl", "-D", "FOREGROUND" ]
