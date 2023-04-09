@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  node-server:
+    image: node-server-image
+    container_name: node-server-container
+    build: .
+    ports:
+      - 3001:3000
